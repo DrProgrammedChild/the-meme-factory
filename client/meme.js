@@ -10,7 +10,7 @@ $(function(){
 	//Functions
 	function getMeme(deepfried){
 		return new Promise((resolve,reject) => {
-			$.post("http://localhost:8081/getmeme",{deepfried: deepfried},data => {
+			$.post("https://dank-memes-xd.herokuapp.com/getmeme",{deepfried: deepfried},data => {
 				resolve(JSON.parse(data));
 			});
 		});
